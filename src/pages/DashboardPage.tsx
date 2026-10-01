@@ -426,8 +426,8 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       <div className="rounded-2xl p-6 sm:p-7 text-[#FAF7F2] bg-gradient-to-br from-[#1C1815] via-[#261E1A] to-[#14110F] border border-[#3E332B] shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all">
         <div className="space-y-2.5 max-w-xl">
           <div className="flex items-center gap-2">
-            <span className="bg-[#3B3026] text-[#D9C4B2] border border-[#524336] text-[10px] font-mono tracking-[0.2em] uppercase font-bold px-3 py-1 rounded-full">
-              WEALTH ATELIER · 25% SIP ALLOCATION
+            <span className="bg-[#3B3026] text-[#D9C4B2] border border-[#524336] text-[10px] font-mono tracking-[0.15em] uppercase font-bold px-3 py-1 rounded-full">
+              MONEY BALANCER · 25% SIP ALLOCATION
             </span>
           </div>
 

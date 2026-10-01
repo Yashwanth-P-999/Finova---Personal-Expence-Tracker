@@ -74,7 +74,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           </div>
           {showTagline && (
             <span className="text-[9px] font-mono uppercase tracking-[0.22em] text-[#7A6B58] dark:text-[#A89F94] mt-1 font-semibold">
-              Raw Elegance · Minimal Stride
+              Personal Finance & Wealth Ledger
             </span>
           )}
         </div>
