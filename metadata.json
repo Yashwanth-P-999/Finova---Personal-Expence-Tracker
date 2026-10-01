@@ -1,0 +1,6 @@
+{
+  "name": "SmartFin",
+  "description": "Intelligent personal finance and expense management platform with analytics, budgeting, and ML-powered categorization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

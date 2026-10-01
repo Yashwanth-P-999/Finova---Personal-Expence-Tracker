@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  smartfin-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smartfin_app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - JWT_SECRET=smartfin_production_secure_secret_2026_xyz
+      - DATABASE_URL=postgresql://smartfin_admin:smartfin_pass@db:5432/smartfin_db
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    container_name: smartfin_postgres
+    environment:
+      POSTGRES_USER: smartfin_admin
+      POSTGRES_PASSWORD: smartfin_pass
+      POSTGRES_DB: smartfin_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
